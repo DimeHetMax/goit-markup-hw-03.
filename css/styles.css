@@ -362,6 +362,12 @@ body {
 .hidden-title {
   display: none;
 }
+
+.portfolio-cards {
+  margin-top: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
+}
 .portfolio-cards-title {
   font-style: normal;
   font-weight: bold;
@@ -382,8 +388,16 @@ body {
 }
 
 .portfolio-cards-list {
+  max-width: 1600px;
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+/* .conrainer-portfolio-cards-pic {
+  display: block;
+} */
+
 /* =====================footer============================ */
 
 .footer {
