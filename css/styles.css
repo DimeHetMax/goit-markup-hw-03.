@@ -1,0 +1,286 @@
+:root {
+  --primary-title-color: #fff;
+  --primary-text-color: #757575;
+  --secondary-title-color: #212121;
+  --secondary-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --background-color: #2f303a;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/*================================== logo =============================*/
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 26px;
+  color: #000000;
+  line-height: 1.2;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
+}
+.logo-span {
+  color: var(--accent-color);
+}
+/* ==========================nav-link==================== */
+.nav-item .link:hover,
+.nav-item .link:focus {
+  color: var(--accent-color);
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.link-main {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--accent-color);
+}
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--secondary-title-color);
+}
+.contacts-list {
+  list-style-type: none;
+}
+
+.contacts-item .link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.contacts-item .link:focus,
+.contacts-item .link:hover {
+  color: var(--accent-color);
+}
+/* =============================section=========================== */
+.section-title {
+  background-color: var(--background-color);
+}
+.main-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-text-color);
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* ------------------------------------------------------------ */
+.section-lead-list {
+  list-style-type: none;
+}
+
+.section-lead-header {
+  display: none;
+}
+.section-lead-item .section-lead-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+
+.section-lead-item .text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  color: var(--primary-text-color);
+}
+/* ---------------------------------------------------------- */
+.section-content-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+}
+
+.section-content-list {
+  list-style-type: none;
+}
+/* ------------------------------------------------------------ */
+.section-team {
+  background: #ffffff;
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.section-team-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+}
+
+.section-team-list {
+  list-style-type: none;
+  display: inline;
+}
+.section-team-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+}
+
+.section-team-item .desc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/* =================portfolio======================== */
+.portfolio-cards-button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.portfolio-cards-button:focus,
+.portfolio-cards-button:hover {
+  background: var(--accent-color);
+  color: var(--secondary-text-color);
+  /* shadow-middle */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.hidden-title {
+  display: none;
+}
+.portfolio-cards-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: var(--secondary-title-color);
+}
+
+.portfolio-cards-list-item .text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.portfolio-cards-list {
+  list-style-type: none;
+}
+/* =====================footer============================ */
+
+.footer {
+  background-color: var(--background-color);
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+}
+
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 1.2;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
+}
+
+.footer-address-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-list {
+  list-style-type: none;
+}
+.footer-item .link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-item .link:hover,
+.footer-item .link:focus {
+  color: var(--accent-color);
+}
