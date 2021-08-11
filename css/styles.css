@@ -139,16 +139,13 @@ body {
   background-color: var(--background-color);
   height: 600px;
   width: auto;
+  padding-top: 200px;
 }
 /* .section-title-container {
   margin-left: auto;
   margin-right: auto;
 } */
 
-.section-lead {
-  margin-left: auto;
-  margin-right: auto;
-}
 .main-title {
   font-family: Roboto;
   font-style: normal;
@@ -165,6 +162,7 @@ body {
   color: var(--primary-title-color);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 .button {
   font-style: normal;
@@ -185,9 +183,32 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.button-title {
+  padding: 10px 32px 10px 32px;
+}
 /* ------------------------------------------------------------ */
+.section-lead {
+  margin-top: 94px;
+}
+.text {
+  max-width: 240px;
+  height: 85px;
+  padding-top: 10px;
+}
 .section-lead-list {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.section-lead-title {
+  max-width: 270px;
+  height: 16px;
+}
+.section-lead-item {
+  margin-right: 30px;
+}
+.section-lead-item:last-child {
+  margin-right: 0px;
 }
 
 .section-lead-header {
@@ -211,6 +232,10 @@ body {
   color: var(--primary-text-color);
 }
 /* ---------------------------------------------------------- */
+.section-content {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
 .section-content-title {
   font-style: normal;
   font-weight: bold;
@@ -223,14 +248,30 @@ body {
 
 .section-content-list {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 92px;
 }
+
+.section-content-item {
+  margin-left: 30px;
+}
+.section-content-item:last-child {
+  margin-right: 0px;
+}
+
 /* ------------------------------------------------------------ */
+
 .section-team {
   background: #ffffff;
   /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.container-section-team {
+  margin-top: 188px;
+  margin-bottom: 94px;
 }
 .section-team-title {
   font-style: normal;
@@ -240,11 +281,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+  padding-bottom: 50px;
 }
 
 .section-team-list {
   list-style-type: none;
   display: inline;
+  display: flex;
+  justify-content: center;
 }
 .section-team-name {
   font-style: normal;
@@ -255,8 +299,27 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
+.section-team-item {
+  border: 1px solid #00000033;
+  /* border-radius: 7px; */
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.section-team-item:last-child {
+  margin-right: 0px;
+}
+/* .section-lead-item {
+  margin-right: 30px;
+}
+.section-lead-item:last-child {
+  margin-right: 0px;
+} */
 .section-team-item .desc {
   font-style: normal;
   font-weight: normal;
@@ -266,6 +329,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  padding-bottom: 30px;
 }
 /* =================portfolio======================== */
 .portfolio-cards-button {
@@ -320,12 +384,15 @@ body {
 
 .footer {
   background-color: var(--background-color);
-  width: 1600px;
+  width: 100%;
   height: 252px;
   left: 0px;
   top: 2097px;
 }
-
+.contaiter-footer {
+  padding-top: 60px;
+  margin-left: 215px;
+}
 .footer-logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
