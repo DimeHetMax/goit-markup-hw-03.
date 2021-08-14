@@ -11,6 +11,7 @@
 * {
   box-sizing: border-box;
 }
+
 h1,
 h2,
 h3,
@@ -50,12 +51,8 @@ body {
   font-size: 26px;
   color: #000000;
   line-height: 1.2;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 2157px;
-  margin-left: 215px;
   margin-right: 93px;
+  width: 145px;
 }
 .logo-span {
   color: var(--accent-color);
@@ -65,53 +62,66 @@ body {
 .nav-item .link:focus {
   color: var(--accent-color);
 }
-.container-page-header {
-  width: 1600px;
-  margin: 0 auto;
-}
 .page-header {
+  background: var(--background-color-white);
+  border-bottom: 1px solid #ececec;
+}
+.container-settings {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-page-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background: var(--background-color-white);
 }
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 24px;
-  margin-bottom: 25px;
 }
 .nav-list {
   display: flex;
 }
-.nav-item {
-  margin-right: 50px;
-}
-.nav-item :not(:last-child) {
+.nav-item:nth-child(-n + 2) {
   margin-right: 50px;
 }
 .contacts-list {
   display: flex;
 }
 
+.contacts-item:first-child {
+  margin-right: 50px;
+}
+/* .contacts-list {
+  display: flex;
+} */
+
 .link-main {
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   text-decoration: none;
   cursor: pointer;
   color: var(--accent-color);
+  padding: 32px 0px;
 }
 .link {
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
   cursor: pointer;
   color: var(--secondary-title-color);
+  padding: 32px 0px;
 }
 
+.contacts-list {
+  margin-left: auto;
+}
 .contacts-item .link {
   font-style: normal;
   font-weight: 500;
@@ -121,14 +131,6 @@ body {
   color: var(--primary-text-color);
 }
 
-.contacts-list {
-  display: flex;
-  margin-right: 200px;
-}
-.contacts-item :first-child {
-  margin-right: 50px;
-}
-
 .contacts-item .link:focus,
 .contacts-item .link:hover {
   color: var(--accent-color);
@@ -136,23 +138,18 @@ body {
 /* =============================section=========================== */
 .section-title {
   background-color: var(--background-color);
-  /* height: 600px;
-  width: auto; */
   padding-top: 200px;
   padding-bottom: 280px;
+  text-align: center;
 }
 
 .main-title {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
   max-width: 700px;
   height: 120px;
-
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-title-color);
@@ -165,33 +162,19 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  /* identical to box height, or 187% */
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-
   color: var(--secondary-text-color);
-
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.button-title {
-  padding: 10px 32px 10px 32px;
+  padding: 10px 32px;
+  margin: 0 auto;
 }
 /* ------------------------------------------------------------ */
 .section-lead {
-  /* margin-top: 94px; */
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.text {
-  max-width: 240px;
-  height: 85px;
-  padding-top: 10px;
+  margin: 0 auto;
 }
 .section-lead-list {
   list-style-type: none;
@@ -199,8 +182,7 @@ body {
   justify-content: center;
 }
 .section-lead-title {
-  max-width: 270px;
-  height: 16px;
+  margin-bottom: 10px;
 }
 .section-lead-item {
   margin-right: 30px;
@@ -210,7 +192,17 @@ body {
 }
 
 .section-lead-header {
-  display: none;
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 }
 .section-lead-item .section-lead-title {
   font-style: normal;
@@ -226,12 +218,12 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   color: var(--primary-text-color);
 }
 /* ---------------------------------------------------------- */
 .section-content {
   padding-bottom: 94px;
+  margin: 0 auto;
 }
 .section-content-title {
   font-style: normal;
@@ -241,17 +233,17 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+  margin-bottom: 50px;
 }
 
 .section-content-list {
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  padding-top: 92px;
+  justify-content: space-between;
 }
 
 .section-content-item {
-  margin-left: 30px;
+  margin-right: 30px;
 }
 .section-content-item:last-child {
   margin-right: 0px;
@@ -261,15 +253,10 @@ body {
 
 .section-team {
   background: #ffffff;
-  /* material shadow v1 */
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.container-section-team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .section-team-title {
   font-style: normal;
   font-weight: bold;
@@ -283,24 +270,29 @@ body {
 
 .section-team-list {
   list-style-type: none;
-  display: inline;
   display: flex;
   justify-content: center;
+}
+.section-team-name-container{
+  padding: 30px 59px;
 }
 .section-team-name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
-  width: 320px;
+  /* width: 320px;
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
 }
 
+.section-team-item {
+  margin-right: 30px;
+
+}
 .section-team-item:last-child {
   margin-right: 0px;
 }
@@ -310,19 +302,16 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  padding-bottom: 30px;
 }
-/* =================portfolio======================== */
+/* ===================================portfolio=========================== */
 .portfolio-cards-button {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
@@ -342,14 +331,13 @@ body {
   border-radius: 4px;
 }
 
-.hidden-title {
-  display: none;
+.container-portfolio-cards {
+  margin-bottom: 50px;
 }
-
 .portfolio-cards {
-  width: 1600px;
-  padding: 94px 215px;
-  margin: 0 auto;
+  padding-top: 94px;
+    padding-bottom: 94px;
+    margin: 0 auto;
 }
 .portfolio-cards-title {
   font-style: normal;
@@ -380,18 +368,13 @@ body {
   padding-left: 24px;
   padding-right: 24px;
 }
+/* ============================================================ */
 .portfolio-cards-list {
   display: flex;
   justify-content: center;
   list-style-type: none;
 }
-/* .portfolio-cards {
-  
-} */
-.container-portfolio-cards-button {
-  margin: 0 auto;
-  margin-bottom: 56px;
-}
+
 .portfolio-cards-list-pics {
   list-style-type: none;
   display: flex;
@@ -419,22 +402,19 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.contaiter-footer {
-  margin-left: 215px;
-}
 .footer-logo {
+  display: block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   text-decoration: none;
   font-size: 26px;
   color: #ffffff;
   line-height: 1.2;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 2157px;
+  margin-bottom: 20px;
 }
-
+.address {
+  display: block;
+}
 .footer-address-text {
   font-style: normal;
   font-weight: normal;
@@ -443,16 +423,20 @@ body {
   /* or 171% */
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 9px;
 }
 .footer-list {
   list-style-type: none;
+} 
+.link-footer {
+  text-decoration: none;
 }
-.footer-item .link {
+
+.footer-item .link-footer {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
