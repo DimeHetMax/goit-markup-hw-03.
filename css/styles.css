@@ -371,7 +371,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   height: 30px;
-  /* padding-bottom: 20px; */
   padding-left: 24px;
   padding-right: 24px;
 }
