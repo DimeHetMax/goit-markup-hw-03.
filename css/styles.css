@@ -353,13 +353,11 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
-  /* padding: 20px 24px 4px 24px; */
-  padding-bottom: 4px;
   padding-left: 24px;
   padding-right: 24px;
+  margin-bottom: 4px;
 }
 .text-porfolio-padding {
   padding-top: 20px;
