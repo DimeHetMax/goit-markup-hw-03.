@@ -41,7 +41,9 @@ ol {
 body {
   font-family: Roboto, sans-serif;
 }
-
+img {
+  display: block;
+}
 /*================================== logo =============================*/
 
 .logo {
@@ -139,7 +141,7 @@ body {
 .section-title {
   background-color: var(--background-color);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   text-align: center;
 }
 /* .container-section-title-button {
@@ -266,7 +268,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .section-team-list {
@@ -275,7 +277,7 @@ body {
   justify-content: center;
 }
 .section-team-name-container {
-  padding: 30px 59px;
+  padding: 30px 30px;
 }
 .section-team-name {
   font-style: normal;
@@ -347,9 +349,8 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   margin: 0 auto;
-  background: #E5E5E5;
 }
-}
+
 .portfolio-cards-title {
   font-style: normal;
   font-weight: bold;
@@ -357,13 +358,10 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
-  padding-left: 24px;
-  padding-right: 24px;
   margin-bottom: 4px;
 }
 .text-porfolio-padding {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
 .text-portfolio {
   font-style: normal;
@@ -373,8 +371,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   height: 30px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 /* ==================================================================== */
 .portfolio-cards-list {
@@ -386,14 +382,13 @@ body {
 .portfolio-cards-list-pics {
   list-style-type: none;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-left: -30px;
 }
 
 .portfolio-cards-list-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  width: 370px;
 }
 .portfolio-cards-list-item:nth-child(3n) {
   margin-right: 0px;
@@ -450,4 +445,7 @@ body {
 .footer-item .link:hover,
 .footer-item .link:focus {
   color: var(--accent-color);
+}
+.footer-item:first-child {
+  margin-bottom: 9px;
 }
