@@ -342,9 +342,6 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
-.container-portfolio-cards {
-  margin-bottom: 50px;
-}
 .portfolio-cards {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -362,6 +359,9 @@ img {
 }
 .text-porfolio-padding {
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .text-portfolio {
   font-style: normal;
@@ -377,6 +377,7 @@ img {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  margin-bottom: 50px;
 }
 
 .portfolio-cards-list-pics {
